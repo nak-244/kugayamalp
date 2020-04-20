@@ -1,8 +1,4 @@
-/*
-Name: 			theme.css
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	7.6.0
-*/
+
 html {
 	direction: ltr;
 	overflow-x: hidden;
@@ -312,7 +308,7 @@ li {
 }
 
 #header .header-nav-top .nav > li > a, #header .header-nav-top .nav > li > span {
-	color: #999;
+	color: #fff;
 	font-size: 0.9em;
 	padding: 6px 10px;
 	display: inline-block;
