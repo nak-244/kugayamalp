@@ -17,3 +17,8 @@
     display: block !important;
   }
 }
+
+/* display none */
+.disnone {
+  display: none;
+}
