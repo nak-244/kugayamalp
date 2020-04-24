@@ -95,7 +95,7 @@
 								data-x="['left','left','left','center']" data-y="center" data-voffset="['33','33','33','33']" data-width="['900','900','900','900']" data-fontsize="['18','18','18','22']" data-lineheight="['26','26','26','26']"
 								data-textAlign="['left','left','left','center']">ご入居者様とペットが、それぞれの専門家のサポートのもと、<br />不安のない生活が送れる「安心感」のある高齢者住宅です。</div>
 
-							<a class="tp-caption btn btn-primary font-weight-bold rounded" href="#"
+							<a class="tp-caption btn btn-primary font-weight-bold rounded" data-toggle="modal" data-target="#formModal" href="#!"
 								data-frames='[{"delay":3000,"speed":2000,"frame":"0","from":"y:50%;opacity:0;","to":"y:0;o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 								data-x="['left','left','left','center']" data-y="center" data-voffset="['103','103','103','140']" data-paddingtop="['16','16','16','24']" data-paddingbottom="['16','16','16','24']" data-paddingleft="['40','40','40','45']"
 								data-paddingright="['40','40','40','45']" data-fontsize="['14','14','14','18']" data-lineheight="['20','20','20','22']">無料資料請求はコチラ <i class="fas fa-arrow-right ml-1"></i></a>
@@ -1510,6 +1510,57 @@
 					</div>
 				</div>
 			</footer>
+
+			<!-- modal -->
+			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title" id="formModalLabel">無料資料請求フォーム</h4>
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						</div>
+						<div class="modal-body">
+							<form id="demo-form" class="mb-4" novalidate="novalidate">
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-left text-sm-right mb-0">お名前</label>
+									<div class="col-sm-9">
+										<input type="text" name="name" class="form-control" required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-left text-sm-right mb-0">メールアドレス</label>
+									<div class="col-sm-9">
+										<input type="email" name="email" class="form-control" required />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-left text-sm-right mb-0">電話番号</label>
+									<div class="col-sm-9">
+										<input type="tel" name="tel" class="form-control" />
+									</div>
+								</div>
+								<div class="form-group row align-items-center">
+									<label class="col-sm-3 text-left text-sm-right mb-0">ご住所</label>
+									<div class="col-sm-9">
+										<input type="text" name="address" class="form-control" />
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-sm-3 text-left text-sm-right mb-0">質問事項等</label>
+									<div class="col-sm-9">
+										<textarea rows="5" class="form-control" /></textarea>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary">送信</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 
 		<script src="vendor/jquery/jquery.min.js"></script>
