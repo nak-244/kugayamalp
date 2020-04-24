@@ -1,9 +1,5 @@
 @charset "UTF-8";
-/*
-Name: 			theme-elements.css
-Written by: 	Okler Themes - (http://www.okler.net)
-Theme Version:	7.6.0
-*/
+
 /* Accordion */
 .accordion {
 	/* Modern */
@@ -8991,7 +8987,7 @@ body.page-transition-active {
 	opacity: 0 !important;
 }
 
-/* 
+/*
 Image 360┬║ Viewer
 Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 */
