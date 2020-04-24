@@ -10,7 +10,7 @@ html {
 body {
 	background-color: #FFF;
 	color: #777;
-	font-family: "Open Sans", Arial, sans-serif;
+	font-family: 'Noto Sans JP', sans-serif;
 	font-size: 14px;
 	line-height: 26px;
 	margin: 0;
@@ -1683,7 +1683,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 	}
 
 	#header .header-nav-main.header-nav-main-font-alternative nav > ul > li > a {
-		font-family: 'Oswald', sans-serif;
+		font-family: 'Noto Sans JP', sans-serif;
 		font-size: 0.85rem;
 		font-weight: 600;
 	}
