@@ -35,8 +35,8 @@ foreach($_POST as $label => $value) {
 
 	// Use the commented code below to change label texts. On this example will change "Email" to "Email Address"
 
-	// if( $label == 'Email' ) {               
-	// 	$label = 'Email Address';              
+	// if( $label == 'Email' ) {
+	// 	$label = 'Email Address';
 	// }
 
 	// Checkboxes
@@ -67,8 +67,8 @@ try {
 	$mail->AddAddress($email);	 						       // Add another recipient
 
 	//$mail->AddAddress('person2@domain.com', 'Person 2');     // Add a secondary recipient
-	//$mail->AddCC('person3@domain.com', 'Person 3');          // Add a "Cc" address. 
-	//$mail->AddBCC('person4@domain.com', 'Person 4');         // Add a "Bcc" address. 
+	//$mail->AddCC('person3@domain.com', 'Person 3');          // Add a "Cc" address.
+	//$mail->AddBCC('person4@domain.com', 'Person 4');         // Add a "Bcc" address.
 
 	// From - Name
 	$fromName = ( isset($_POST['name']) ) ? $_POST['name'] : 'Website User';
