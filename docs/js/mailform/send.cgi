@@ -5,96 +5,96 @@
 require 'jcode.pl';
 
 ########################################################################
-##ˆê”Ê“I‚Èİ’è##########################################################
+##ä¸€èˆ¬çš„ãªè¨­å®š##########################################################
 ########################################################################
 
-#00.ƒeƒXƒg‚ÌŒë‘—M‚ğ§Œä / 0‚É‚µ‚È‚¢‚Æƒ[ƒ‹‚ª”ò‚Ñ‚Ü‚¹‚ñ
+#00.ãƒ†ã‚¹ãƒˆæ™‚ã®èª¤é€ä¿¡ã‚’åˆ¶å¾¡ / 0ã«ã—ãªã„ã¨ãƒ¡ãƒ¼ãƒ«ãŒé£›ã³ã¾ã›ã‚“
 $conf{'debug'} = 1;
 
-#03.ƒXƒpƒ€ƒuƒƒbƒN([URL]‚â[LINK]A<a>ƒ^ƒO‚ªŠÜ‚Ü‚ê‚½‘—M‚ğƒuƒƒbƒN) 1:ON / 0:OFF
+#03.ã‚¹ãƒ‘ãƒ ãƒ–ãƒ­ãƒƒã‚¯([URL]ã‚„[LINK]ã€<a>ã‚¿ã‚°ãŒå«ã¾ã‚ŒãŸé€ä¿¡ã‚’ãƒ–ãƒ­ãƒƒã‚¯) 1:ON / 0:OFF
 $conf{'spam_block'} = 1;
 
-#03-01.‘—M•¶š—ñ‚ÉURL‚ªŠÜ‚Ü‚ê‚éê‡‚É‘—M‚ğƒuƒƒbƒN 1:ON / 0:OFF
+#03-01.é€ä¿¡æ–‡å­—åˆ—ã«URLãŒå«ã¾ã‚Œã‚‹å ´åˆã«é€ä¿¡ã‚’ãƒ–ãƒ­ãƒƒã‚¯ 1:ON / 0:OFF
 $conf{'spam_url_block'} = 1;
 
-#03-02.ƒXƒpƒ€”»’è‚É•\¦‚³‚ê‚éƒƒbƒZ[ƒW
-$conf{'spam_message'} = 'ƒXƒpƒ€sˆ×‚Ì‰Â”\«‚ª‚ ‚é‚½‚ßA‘—M‚Å‚«‚Ü‚¹‚ñB<br />‘—M“à—e‚ÉURL‚ğŠÜ‚ß‚é–‚Í‚Å‚«‚Ü‚¹‚ñB';
+#03-02.ã‚¹ãƒ‘ãƒ åˆ¤å®šæ™‚ã«è¡¨ç¤ºã•ã‚Œã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
+$conf{'spam_message'} = 'ã‚¹ãƒ‘ãƒ è¡Œç‚ºã®å¯èƒ½æ€§ãŒã‚ã‚‹ãŸã‚ã€é€ä¿¡ã§ãã¾ã›ã‚“ã€‚<br />é€ä¿¡å†…å®¹ã«URLã‚’å«ã‚ã‚‹äº‹ã¯ã§ãã¾ã›ã‚“ã€‚';
 
-#04.sendmail‚ÌƒpƒX(ƒT[ƒo‰ïĞ‚Ö‚¨–â‚¢‡‚í‚¹‰º‚³‚¢)
+#04.sendmailã®ãƒ‘ã‚¹(ã‚µãƒ¼ãƒä¼šç¤¾ã¸ãŠå•ã„åˆã‚ã›ä¸‹ã•ã„)
 $conf{'sendmail'} = '/usr/sbin/sendmail';
 
-#06.İ’uÒ‚ÌƒAƒhƒŒƒX(ƒJƒ“ƒ}‹æØ‚è)
+#06.è¨­ç½®è€…ã®ã‚¢ãƒ‰ãƒ¬ã‚¹(ã‚«ãƒ³ãƒåŒºåˆ‡ã‚Š)
 $conf{'mailto'} = '*****';
 
-#07.‘—MŠ®—¹‚ÉƒŠƒ_ƒCƒŒƒNƒg‚·‚éƒTƒ“ƒNƒXƒy[ƒW
+#07.é€ä¿¡å®Œäº†æ™‚ã«ãƒªãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆã™ã‚‹ã‚µãƒ³ã‚¯ã‚¹ãƒšãƒ¼ã‚¸
 $conf{'thanks'} = 'http://cgi.synck.com/mailform/thanks.html';
 
-#08.İ’uÒ‚É“Í‚­ƒ[ƒ‹‚ÌŒ–¼
-$conf{'subject'} = 'ƒ[ƒ‹ƒtƒH[ƒ€‚©‚ç';
+#08.è¨­ç½®è€…ã«å±Šããƒ¡ãƒ¼ãƒ«ã®ä»¶å
+$conf{'subject'} = 'ãƒ¡ãƒ¼ãƒ«ãƒ•ã‚©ãƒ¼ãƒ ã‹ã‚‰';
 
-#09.‘—MÒ‚É“Í‚­ƒ[ƒ‹‚ÌŒ–¼
-$conf{'res_subject'} = '‚¨–â‚¢‡‚í‚¹‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚·';
+#09.é€ä¿¡è€…ã«å±Šããƒ¡ãƒ¼ãƒ«ã®ä»¶å
+$conf{'res_subject'} = 'ãŠå•ã„åˆã‚ã›ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã™';
 
-#10.‘—MÒ‚É“Í‚­ƒ[ƒ‹‚Ì–{•¶
+#10.é€ä¿¡è€…ã«å±Šããƒ¡ãƒ¼ãƒ«ã®æœ¬æ–‡
 $conf{'res_body'} = <<'__res_body_eof__';
-‚±‚Ì“x‚Í‚¨–â‚¢‡‚¹’¸‚«½‚É‚ ‚è‚ª‚Æ‚¤‚²‚´‚¢‚Ü‚µ‚½B
-‰ü‚ß‚Ä’S“–Ò‚æ‚è‚²˜A—‚ğ‚³‚¹‚Ä‚¢‚½‚¾‚«‚Ü‚·B
+ã“ã®åº¦ã¯ãŠå•ã„åˆã›é ‚ãèª ã«ã‚ã‚ŠãŒã¨ã†ã”ã–ã„ã¾ã—ãŸã€‚
+æ”¹ã‚ã¦æ‹…å½“è€…ã‚ˆã‚Šã”é€£çµ¡ã‚’ã•ã›ã¦ã„ãŸã ãã¾ã™ã€‚
 
-„Ÿ‚²‘—M“à—e‚ÌŠm”F„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
+â”€ã”é€ä¿¡å†…å®¹ã®ç¢ºèªâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 <resbody>
-„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ„Ÿ
+â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-‚±‚Ìƒ[ƒ‹‚ÉS“–‚½‚è‚Ì–³‚¢ê‡‚ÍA‚¨è”‚Å‚·‚ª
-‰º‹L˜A—æ‚Ü‚Å‚¨–â‚¢‡‚í‚¹‚­‚¾‚³‚¢B
+ã“ã®ãƒ¡ãƒ¼ãƒ«ã«å¿ƒå½“ãŸã‚Šã®ç„¡ã„å ´åˆã¯ã€ãŠæ‰‹æ•°ã§ã™ãŒ
+ä¸‹è¨˜é€£çµ¡å…ˆã¾ã§ãŠå•ã„åˆã‚ã›ãã ã•ã„ã€‚
 
-‚±‚Ì“x‚Í‚¨–â‚¢‡‚í‚¹d‚Ë‚Ä‚¨—ç\‚µã‚°‚Ü‚·B
-„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª
-@¦‚±‚Ì–¼‚ÍƒTƒ“ƒvƒ‹‚Å‚·B•K‚¸•ÏX‚µ‚Ä‚­‚¾‚³‚¢¦@
-@ƒVƒ“ƒNƒOƒ‰ƒtƒBƒJ / SYNCKGRAPHICA
-@§003-0801 D–ys”’Î‹æ‹e…ˆêğl’š–Úˆê”ÔO\‹ã†
-@TEL / 011-832-8698@FAX / 011-832-8698
-@http://www.synck.com
-„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª„ª
+ã“ã®åº¦ã¯ãŠå•ã„åˆã‚ã›é‡ã­ã¦ãŠç¤¼ç”³ã—ä¸Šã’ã¾ã™ã€‚
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
+ã€€â€»ã“ã®ç½²åã¯ã‚µãƒ³ãƒ—ãƒ«ã§ã™ã€‚å¿…ãšå¤‰æ›´ã—ã¦ãã ã•ã„â€»ã€€
+ã€€ã‚·ãƒ³ã‚¯ã‚°ãƒ©ãƒ•ã‚£ã‚« / SYNCKGRAPHICA
+ã€€ã€’003-0801 æœ­å¹Œå¸‚ç™½çŸ³åŒºèŠæ°´ä¸€æ¡å››ä¸ç›®ä¸€ç•ªä¸‰åä¹å·
+ã€€TEL / 011-832-8698ã€€FAX / 011-832-8698
+ã€€http://www.synck.com
+â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”â”
 __res_body_eof__
 
 
-#11.YahooƒWƒIƒVƒeƒB[ƒY ƒWƒIƒvƒ‰ƒX—pİ’è 1:ON / 0:OFF
+#11.Yahooã‚¸ã‚ªã‚·ãƒ†ã‚£ãƒ¼ã‚º ã‚¸ã‚ªãƒ—ãƒ©ã‚¹ç”¨è¨­å®š 1:ON / 0:OFF
 $conf{'geoplus'} = 0;
 
 ########################################################################
-##‚“x‚Èİ’è############################################################
+##é«˜åº¦ãªè¨­å®š############################################################
 ########################################################################
 
-#01.ƒŠƒtƒ@ƒ‰[‚É‚æ‚éƒXƒpƒ€ƒ`ƒFƒbƒN 1:ON / 0:OFF
+#01.ãƒªãƒ•ã‚¡ãƒ©ãƒ¼ã«ã‚ˆã‚‹ã‚¹ãƒ‘ãƒ ãƒã‚§ãƒƒã‚¯ 1:ON / 0:OFF
 $conf{'domain_check'} = 1;
 
-#01.ƒŠƒtƒ@ƒ‰[(‘—MŒ³)‚ÌURL‚Ìˆê•”‚©‘S•”
+#01.ãƒªãƒ•ã‚¡ãƒ©ãƒ¼(é€ä¿¡å…ƒ)ã®URLã®ä¸€éƒ¨ã‹å…¨éƒ¨
 $conf{'domain'} = $ENV{'SERVER_NAME'};
 
-#02.HTML‘¤‚Å‚Ìİ’è‚ğ–³Œø‰»(ƒ^ƒ_æ‚è‘Îô) 1:ON / 0:OFF
+#02.HTMLå´ã§ã®è¨­å®šã‚’ç„¡åŠ¹åŒ–(ã‚¿ãƒ€ä¹—ã‚Šå¯¾ç­–) 1:ON / 0:OFF
 $conf{'html_vals_disabled'} = 1;
 
-#03.‘S‚Ä‚ª‰p•¶‚Ì‘—M‚ğ‹‘”Û 1:ON / 0:OFF
+#03.å…¨ã¦ãŒè‹±æ–‡ã®é€ä¿¡ã‚’æ‹’å¦ 1:ON / 0:OFF
 $conf{'language_check'} = 1;
 
-#04.Javascript”ñ“®ìƒXƒpƒ€ƒ`ƒFƒbƒN 1:ON / 0:OFF
+#04.Javascriptéå‹•ä½œã‚¹ãƒ‘ãƒ ãƒã‚§ãƒƒã‚¯ 1:ON / 0:OFF
 $conf{'javascript'} = 0;
 
-#11.’Ê‚µ”Ô†•Û‘¶—p‚Ìƒtƒ@ƒCƒ‹‚ÌƒpƒX
+#11.é€šã—ç•ªå·ä¿å­˜ç”¨ã®ãƒ•ã‚¡ã‚¤ãƒ«ã®ãƒ‘ã‚¹
 $conf{'serial_file'} = 'count.dat';
 
-#12.Œ–¼‚É’Ê‚µ”Ô†‚ğ•t‚¯‚é 1:ON / 0:OFF
+#12.ä»¶åã«é€šã—ç•ªå·ã‚’ä»˜ã‘ã‚‹ 1:ON / 0:OFF
 $conf{'subject_serial'} = 1;
 
-#12.‘—M—š—ğ•Û‘¶—pƒtƒ@ƒCƒ‹‚Æƒ_ƒEƒ“ƒ[ƒhƒpƒXƒ[ƒh
+#12.é€ä¿¡å±¥æ­´ä¿å­˜ç”¨ãƒ•ã‚¡ã‚¤ãƒ«ã¨ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰
 #$conf{'log_file'} = 'sendlog.cgi';
 #$conf{'log_passwd'} = '0123';
 
-#13.‘—M•¶šƒR[ƒh
+#13.é€ä¿¡æ–‡å­—ã‚³ãƒ¼ãƒ‰
 $conf{'charset'} = 'ISO-2022-JP';
 $conf{'lang'} = 1;
 
-#–³•ÏŠ·İ’è
+#ç„¡å¤‰æ›è¨­å®š
 #$conf{'charset'} = 'UTF-8';
 #$conf{'lang'} = 0;
 
@@ -103,7 +103,7 @@ $conf{'lang'} = 1;
 ##MAIN##################################################################
 ########################################################################
 ($sec,$min,$hour,$day,$mon,$year) = localtime(time);$mon++;$year += 1900;
-$posted_body = sprintf("%04d-%02d-%02d %02d:%02d:%02d\n\n",$year,$mon,$day,$hour,$min,$sec);
+$posted_body = sprintf("%04d-%02d-%02d %02d:%02d:%02dÂ¥nÂ¥n",$year,$mon,$day,$hour,$min,$sec);
 $conf{'download_file_name'} = sprintf("%04d-%02d-%02d.csv",$year,$mon,$day,$hour,$min,$sec);
 push @field, "DATE";
 push @record, sprintf("%04d-%02d-%02d %02d:%02d:%02d",$year,$mon,$day,$hour,$min,$sec);
@@ -111,10 +111,10 @@ push @record, sprintf("%04d-%02d-%02d %02d:%02d:%02d",$year,$mon,$day,$hour,$min
 $spam{"lang"} = 1;
 $spam{"link"} = 0;
 
-@construct_utf = ("|","`");
-#@construct_utf = ("\xef\xbc\x8d","\xE3\x80\x9C");
-@construct_jis = ("\x1b\x24B\x21\x5d\x1b\x28J","\x1b\x24B\x21A\x1b\x28J");
-@construct_sjis = ("\x81\x7c","\x81\x60");
+@construct_utf = ("âˆ’","ã€œ");
+#@construct_utf = ("Â¥xefÂ¥xbcÂ¥x8d","Â¥xE3Â¥x80Â¥x9C");
+@construct_jis = ("Â¥x1bÂ¥x24BÂ¥x21Â¥x5dÂ¥x1bÂ¥x28J","Â¥x1bÂ¥x24BÂ¥x21AÂ¥x1bÂ¥x28J");
+@construct_sjis = ("Â¥x81Â¥x7c","Â¥x81Â¥x60");
 
 &getQuery;
 &main;
@@ -133,10 +133,10 @@ sub main {
 sub send {
 	if(&spamcheck){
 		if(!$conf{'debug'}){
-			@mailto = split(/\,/,$conf{'mailto'});
+			@mailto = split(/Â¥,/,$conf{'mailto'});
 			if(@mailto > 0){
 				&serials;
-				if($mailfrom =~ /[^a-zA-Z0-9\.\@\-\_\+]/ || split(/\@/,$mailfrom) != 2){
+				if($mailfrom =â€¾ /[^a-zA-Z0-9Â¥.Â¥@Â¥-Â¥_Â¥+]/ || split(/Â¥@/,$mailfrom) != 2){
 					$mailfrom = $mailto[0];
 				}
 				$subject = $conf{'subject'};
@@ -192,9 +192,9 @@ sub serials {
 		push @field, "SERIAL";
 		push @csv, $serial_number;
 		$form{"serial"} = $serial_number;
-		$conf{"subject"} = "\[" . $serial_number . "\] " . $conf{"subject"};
+		$conf{"subject"} = "Â¥[" . $serial_number . "Â¥] " . $conf{"subject"};
 		if($conf{'subject_serial'}){
-			$conf{"res_subject"} = "\[" . $serial_number . "\] " . $conf{"res_subject"};
+			$conf{"res_subject"} = "Â¥[" . $serial_number . "Â¥] " . $conf{"res_subject"};
 		}
 		$serial++;
 		&saveline($conf{"serial_file"},$serial);
@@ -231,9 +231,9 @@ sub mimeenc {
 sub encodeJIS {
 	my($str) = @_;
 	#for(my $cnt=0;$cnt<@construct_utf;$cnt++){
-	#	$str =~ s/$construct_utf[$cnt]/<\_hotfix${cnt}\_>/g;
+	#	$str =â€¾ s/$construct_utf[$cnt]/<Â¥_hotfix${cnt}Â¥_>/g;
 	#}
-	#Jcode::convert(\$str,'jis');
+	#Jcode::convert(Â¥$str,'jis');
 	#$str = &charhotfix_unescape_jis($str);
 	&jcode'convert(*str,'jis');
 	return $str;
@@ -241,9 +241,9 @@ sub encodeJIS {
 sub encodeSJIS {
 	my($str) = @_;
 	#for(my $cnt=0;$cnt<@construct_utf;$cnt++){
-	#	$str =~ s/$construct_utf[$cnt]/<\_hotfix${cnt}\_>/g;
+	#	$str =â€¾ s/$construct_utf[$cnt]/<Â¥_hotfix${cnt}Â¥_>/g;
 	#}
-	#Jcode::convert(\$str,'sjis');
+	#Jcode::convert(Â¥$str,'sjis');
 	#$str = &charhotfix_unescape_sjis($str);
 	&jcode'convert(*str,'sjis');
 	return $str;
@@ -251,14 +251,14 @@ sub encodeSJIS {
 sub charhotfix_unescape_jis {
 	my($str) = @_;
 	for(my $cnt=0;$cnt<@construct_utf;$cnt++){
-		$str =~ s/<\_hotfix${cnt}\_>/$construct_jis[$cnt]/g;
+		$str =â€¾ s/<Â¥_hotfix${cnt}Â¥_>/$construct_jis[$cnt]/g;
 	}
 	return $str;
 }
 sub charhotfix_unescape_sjis {
 	my($str) = @_;
 	for(my $cnt=0;$cnt<@construct_utf;$cnt++){
-		$str =~ s/<\_hotfix${cnt}\_>/$construct_sjis[$cnt]/g;
+		$str =â€¾ s/<Â¥_hotfix${cnt}Â¥_>/$construct_sjis[$cnt]/g;
 	}
 	return $str;
 }
@@ -273,41 +273,41 @@ sub getQuery {
 	@pairs = split(/&/, $buffer);
 	foreach $pair (@pairs) {
 		($name, $value) = split(/=/, $pair);
-		$name =~ tr/+/ /;
-		$name =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
-		$value =~ tr/+/ /;
-		$value =~ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
+		$name =â€¾ tr/+/ /;
+		$name =â€¾ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
+		$value =â€¾ tr/+/ /;
+		$value =â€¾ s/%([a-fA-F0-9][a-fA-F0-9])/pack("C", hex($1))/eg;
 		if($name eq "email"){
-			$posted_body .= "\n\[ ${name} \] ${value}";
+			$posted_body .= "Â¥nÂ¥[ ${name} Â¥] ${value}";
 			push @field,$name;
 			push @record,$value;
 			$mailfrom = $value;
-			$mailfrom =~ s/ //ig;
-			$mailfrom =~ s/\t//ig;
-			$mailfrom =~ s/\n//ig;
+			$mailfrom =â€¾ s/ //ig;
+			$mailfrom =â€¾ s/Â¥t//ig;
+			$mailfrom =â€¾ s/Â¥n//ig;
 		}
 		elsif($name ne $null && $name ne "Submit" && $name ne "confirm_email" && $name ne "x" && $name ne "y" && $name ne "javascriptcheck"){
 			if($name ne $prev_name){
 				$crr = "";
-				if(index($value,"\n") > -1){
-					$crr = "\n";
+				if(index($value,"Â¥n") > -1){
+					$crr = "Â¥n";
 				}
-				$posted_body .= "\n\[ ${name} \] ${crr}${value}${crr}";
+				$posted_body .= "Â¥nÂ¥[ ${name} Â¥] ${crr}${value}${crr}";
 				push @field,$name;
 				push @record,$value;
 			}
 			else {
-				$form{$name} .= "A";
-				$posted_body .= "A${value}";
-				$record[-1] .= "A${value}";
+				$form{$name} .= "ã€";
+				$posted_body .= "ã€${value}";
+				$record[-1] .= "ã€${value}";
 			}
-			if(!($value !~ /[\x80-\xff]/)){
+			if(!($value !â€¾ /[Â¥x80-Â¥xff]/)){
 				$spam{"lang"} = 0;
 			}
-			if($value =~ /\[\/url\]/si || $value =~ /\[\/link\]/si || $value =~ /\<\/a\>/si){
+			if($value =â€¾ /Â¥[Â¥/urlÂ¥]/si || $value =â€¾ /Â¥[Â¥/linkÂ¥]/si || $value =â€¾ /Â¥<Â¥/aÂ¥>/si){
 				$spam{"link"} = 1;
 			}
-			if($value =~ /http\:\/\//si || $value =~ /https\:\/\//si){
+			if($value =â€¾ /httpÂ¥:Â¥/Â¥//si || $value =â€¾ /httpsÂ¥:Â¥/Â¥//si){
 				$spam{"url"} = 1;
 			}
 		}
@@ -320,16 +320,16 @@ sub getQuery {
 	}
 
 	my($ip_address) = $ENV{'REMOTE_ADDR'};
-	my(@addr) = split(/\./, $ip_address);
+	my(@addr) = split(/Â¥./, $ip_address);
 	my($packed_addr) = pack("C4", $addr[0], $addr[1], $addr[2], $addr[3]);
 	my($name, $aliases, $addrtype, $length, @addrs);
 	($name, $aliases, $addrtype, $length, @addrs) = gethostbyaddr($packed_addr, 2);
-	$admin_posted_body .= "\n\n\[ HOST NAME \] ${name}\n";
-	$admin_posted_body .= "\[ IP ADDRESS \] $ENV{'REMOTE_ADDR'}\n";
-	$admin_posted_body .= "\[ USER AGENT \] $ENV{'HTTP_USER_AGENT'}\n";
-	$admin_posted_body .= "\[ HTTP REFERER \] $ENV{'HTTP_REFERER'}";
+	$admin_posted_body .= "Â¥nÂ¥nÂ¥[ HOST NAME Â¥] ${name}Â¥n";
+	$admin_posted_body .= "Â¥[ IP ADDRESS Â¥] $ENV{'REMOTE_ADDR'}Â¥n";
+	$admin_posted_body .= "Â¥[ USER AGENT Â¥] $ENV{'HTTP_USER_AGENT'}Â¥n";
+	$admin_posted_body .= "Â¥[ HTTP REFERER Â¥] $ENV{'HTTP_REFERER'}";
 	$admin_posted_body = $posted_body . $admin_posted_body;
-	$conf{'res_body'} =~ s/<resbody>/$posted_body/g;
+	$conf{'res_body'} =â€¾ s/<resbody>/$posted_body/g;
 	push @field,"HOST NAME";
 	push @record,$name;
 	push @field,"IP ADDRESS";
@@ -338,14 +338,14 @@ sub getQuery {
 	push @record,$ENV{'HTTP_USER_AGENT'};
 	push @field,"HTTP REFERER";
 	push @record,$ENV{'HTTP_REFERER'};
-	$field = "\"" . join("\"\,\"",@field) . "\"\n";
-	$record = "\"" . join("\"\,\"",@record) . "\"\n";
+	$field = "Â¥"" . join("Â¥"Â¥,Â¥"",@field) . "Â¥"Â¥n";
+	$record = "Â¥"" . join("Â¥"Â¥,Â¥"",@record) . "Â¥"Â¥n";
 	$field .= $record;
 }
 
 sub refresh {
 	my($refreshurl) = @_;
-	print "Location: ${refreshurl}\n\n";
+	print "Location: ${refreshurl}Â¥nÂ¥n";
 }
 
 sub logfileCreate {
@@ -380,15 +380,15 @@ sub sendmail {
 		sleep(3);
 	}
 	open(MAIL,"| $conf{'sendmail'} -f $mailfrom -t");
-		print MAIL "To: $mailto\n";
-		print MAIL "Errors-To: $mailto\n";
-		print MAIL "From: $mailfrom\n";
-		print MAIL "Subject: $subject\n";
-		print MAIL "MIME-Version:1.0\n";
-		print MAIL "Content-type:text/plain; charset=$conf{'charset'}\n";
-		print MAIL "Content-Transfer-Encoding:7bit\n";
-		print MAIL "X-Mailer:Web Mail Delivery System\n\n";
-		print MAIL "$body\n";
+		print MAIL "To: $mailtoÂ¥n";
+		print MAIL "Errors-To: $mailtoÂ¥n";
+		print MAIL "From: $mailfromÂ¥n";
+		print MAIL "Subject: $subjectÂ¥n";
+		print MAIL "MIME-Version:1.0Â¥n";
+		print MAIL "Content-type:text/plain; charset=$conf{'charset'}Â¥n";
+		print MAIL "Content-Transfer-Encoding:7bitÂ¥n";
+		print MAIL "X-Mailer:Web Mail Delivery SystemÂ¥nÂ¥n";
+		print MAIL "$bodyÂ¥n";
 	close(MAIL);
 }
 
@@ -424,50 +424,50 @@ sub saveaddline {
 	chmod 0600, "${save}";
 }
 sub spamerror {
-	print "Content-type: text/html\n\n";
-	print "<html>\n";
-	print "\t<head>\n";
-	print "\t\t<title>SPAM BLOCK</title>\n";
-	print "\t</head>\n";
-	print "\t<body>\n";
-	print "\t\t<h1>SPAM BLOCK</h1>\n";
-	print "\t\t<p>$conf{'spam_message'}</p>\n";
-	print "</body></html>\n";
+	print "Content-type: text/htmlÂ¥nÂ¥n";
+	print "<html>Â¥n";
+	print "Â¥t<head>Â¥n";
+	print "Â¥tÂ¥t<title>SPAM BLOCK</title>Â¥n";
+	print "Â¥t</head>Â¥n";
+	print "Â¥t<body>Â¥n";
+	print "Â¥tÂ¥t<h1>SPAM BLOCK</h1>Â¥n";
+	print "Â¥tÂ¥t<p>$conf{'spam_message'}</p>Â¥n";
+	print "</body></html>Â¥n";
 }
 sub debug {
-	print "Content-type: text/html\n\n";
-	print "<html>\n";
-	print "\t<head>\n";
-	print "\t\t<title>DEBUG</title>\n";
-	print "\t</head>\n";
-	print "\t<body>\n";
-	print "\t\t<h1>DEBUG</h1>\n";
-	print "</body></html>\n";
+	print "Content-type: text/htmlÂ¥nÂ¥n";
+	print "<html>Â¥n";
+	print "Â¥t<head>Â¥n";
+	print "Â¥tÂ¥t<title>DEBUG</title>Â¥n";
+	print "Â¥t</head>Â¥n";
+	print "Â¥t<body>Â¥n";
+	print "Â¥tÂ¥t<h1>DEBUG</h1>Â¥n";
+	print "</body></html>Â¥n";
 }
 sub downloadscreen {
-	print "Content-type: text/html\n\n";
-	print "<html>\n";
-	print "\t<head>\n";
-	print "\t\t<title>mode::logfile download</title>\n";
-	print "\t\t<style type=\"text/css\">\n";
-	print "\t\t<!--\n";
-	print "\t\t* {\n";
-	print "\t\t\tfont-family: \"Arial\", \"Helvetica\", \"sans-serif\";font-size: 12px;\n";
-	print "\t\t}\n";
-	print "\t\t-->\n";
-	print "\t\t</style>\n";
-	print "\t</head>\n";
-	print "\t<body>\n";
-	print "\t\t<h1 style=\"font-size: 21px;color: #232323;\">mode::logfile download</h1>\n";
-	print "\t\t<form name=\"getLogs\" action=\"\" method=\"POST\">\n";
-	print "\t\t\tPASSWORD <input type=\"password\" name=\"password\" style=\"ime-mode: disabled;width: 300px;\"><input type=\"submit\" value=\"GET LOG FILE\">\n";
-	print "\t\t</form></body></html>\n";
+	print "Content-type: text/htmlÂ¥nÂ¥n";
+	print "<html>Â¥n";
+	print "Â¥t<head>Â¥n";
+	print "Â¥tÂ¥t<title>mode::logfile download</title>Â¥n";
+	print "Â¥tÂ¥t<style type=Â¥"text/cssÂ¥">Â¥n";
+	print "Â¥tÂ¥t<!--Â¥n";
+	print "Â¥tÂ¥t* {Â¥n";
+	print "Â¥tÂ¥tÂ¥tfont-family: Â¥"ArialÂ¥", Â¥"HelveticaÂ¥", Â¥"sans-serifÂ¥";font-size: 12px;Â¥n";
+	print "Â¥tÂ¥t}Â¥n";
+	print "Â¥tÂ¥t-->Â¥n";
+	print "Â¥tÂ¥t</style>Â¥n";
+	print "Â¥t</head>Â¥n";
+	print "Â¥t<body>Â¥n";
+	print "Â¥tÂ¥t<h1 style=Â¥"font-size: 21px;color: #232323;Â¥">mode::logfile download</h1>Â¥n";
+	print "Â¥tÂ¥t<form name=Â¥"getLogsÂ¥" action=Â¥"Â¥" method=Â¥"POSTÂ¥">Â¥n";
+	print "Â¥tÂ¥tÂ¥tPASSWORD <input type=Â¥"passwordÂ¥" name=Â¥"passwordÂ¥" style=Â¥"ime-mode: disabled;width: 300px;Â¥"><input type=Â¥"submitÂ¥" value=Â¥"GET LOG FILEÂ¥">Â¥n";
+	print "Â¥tÂ¥t</form></body></html>Â¥n";
 }
 
 sub download {
 	chmod 0777, $conf{'log_file'};
-	print "Content-type: application/octet-stream; name=\"$conf{'log_file'}\"\n";
-	print "Content-Disposition: attachment; filename=\"$conf{'download_file_name'}\"\n\n";
+	print "Content-type: application/octet-stream; name=Â¥"$conf{'log_file'}Â¥"Â¥n";
+	print "Content-Disposition: attachment; filename=Â¥"$conf{'download_file_name'}Â¥"Â¥nÂ¥n";
 	open(IN,$conf{'log_file'});
 	print <IN>;
 	chmod 0600, $conf{'log_file'};
