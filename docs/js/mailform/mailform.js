@@ -225,18 +225,18 @@
 			tagObjects[i].style.backgroundColor = "#E8EEF9";
 		}
 	}
-	if(mfObj){
-		for(i=0;i<mfObj.length;i++){
-			if(mfObj.elements[i].size){
-				if(mfObj.elements[i].type == "text")
-					mfObj.elements[i].style.width = (mfObj.elements[i].size * 18) + "px";
-			}
-			if(mfObj.elements[i].rows)
-				mfObj.elements[i].style.height = (mfObj.elements[i].rows * 12) + "px";
-			if(mfObj.elements[i].cols)
-				mfObj.elements[i].style.width = (mfObj.elements[i].cols * 18) + "px";
-		}
-	}
+	// if(mfObj){
+	// 	for(i=0;i<mfObj.length;i++){
+	// 		if(mfObj.elements[i].size){
+	// 			if(mfObj.elements[i].type == "text")
+	// 				mfObj.elements[i].style.width = (mfObj.elements[i].size * 18) + "px";
+	// 		}
+	// 		if(mfObj.elements[i].rows)
+	// 			mfObj.elements[i].style.height = (mfObj.elements[i].rows * 12) + "px";
+	// 		if(mfObj.elements[i].cols)
+	// 			mfObj.elements[i].style.width = (mfObj.elements[i].cols * 18) + "px";
+	// 	}
+	// }
 	var valueList = new Array();
 	var selectedLinks = new Array();
 	var elcount = 0;
