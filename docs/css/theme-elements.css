@@ -14069,7 +14069,7 @@ section.timeline .timeline-box .owl-carousel {
 }
 
 .toggle > label + p {
-	color: #999;
+	color: #212529;
 	display: block;
 	overflow: hidden;
 	padding-left: 30px;
@@ -14248,7 +14248,7 @@ small, .small {
 
 /* Paragraphs */
 p {
-	color: #777;
+	color: #212529;
 	line-height: 26px;
 	margin: 0 0 20px;
 }
