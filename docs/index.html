@@ -1513,14 +1513,14 @@
 
 			<!-- modal -->
 			<div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="formModalLabel" aria-hidden="true">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h4 class="modal-title" id="formModalLabel">無料資料請求フォーム</h4>
-							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						</div>
-						<div class="modal-body">
-							<form class="mb-4" novalidate="novalidate" id="mailform" method="post" action="js/mailform/send.cgi" onsubmit="return sendmail(this);">
+				<form class="mb-4" novalidate="novalidate" id="mailform" method="post" action="js/mailform/send.cgi" onsubmit="return sendmail(this);">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title" id="formModalLabel">無料資料請求フォーム</h4>
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							</div>
+							<div class="modal-body">
 								<div class="form-group row align-items-center">
 									<label class="col-sm-3 text-left text-sm-right mb-0">お名前&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
@@ -1551,13 +1551,13 @@
 										<textarea rows="5" class="form-control" /></textarea>
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button type="button" class="btn btn-secondary">送信</button>
+							</div>
+							<div class="modal-footer">
+								<input type="submit" value="メールを送信する" class="btn btn-secondary"/>
+							</div>
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 			<script type="text/javascript" src="js/mailform/mailform.js" charset="utf-8"></script>
 			<!-- //modal -->
