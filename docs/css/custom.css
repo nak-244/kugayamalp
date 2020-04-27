@@ -19,7 +19,10 @@
 }
 
 /* ヘッダー右寄せ */
-
+.navright {
+  text-align: right;
+display: block;
+}
 
 /* display none */
 .disnone {
