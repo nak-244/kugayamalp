@@ -112,7 +112,7 @@
 			}
 			checkflag[obj.elements[i].name] = 1;
 		}
-
+		
 		if(errorflag == 0){
 			if(confirm("送信してもよろしいですか？")){
 				for(i=0;i<obj.length ;i++){
@@ -188,7 +188,7 @@
 			"ニ","ヌ","ネ","ノ","ハ","ヒ","フ","ヘ","ホ","マ","ミ","ム","メ","モ","ヤ",
 			"ユ","ヨ","ラ","リ","ル","レ","ロ","ワ","ン",
 			'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','@','0','1','2','3','4','5','6','7','8','9','.',
-			'(1)','(2)','(3)','(4)','(5)','(6)','(7)','(8)','(9)','(10)','(1)','(2)','(3)','(4)','(5)','(6)','(7)','(8)','(9)','(10)','(株)','(有)','－','～');
+			'(1)','(2)','(3)','(4)','(5)','(6)','(7)','(8)','(9)','(10)','(1)','(2)','(3)','(4)','(5)','(6)','(7)','(8)','(9)','(10)','(株)','(有)','-','～');
 		for(i=0;i<befor.length;i++){
 			var temp = new Array();
 			temp = obj.value.split(befor[i]);
@@ -212,20 +212,20 @@
 		alert("this");
 	}
 	var mfObj = document.forms["mailform"];
-
+	
 	var elm = document.createElement('input');
 	elm.type = 'hidden';
 	elm.name = 'javascriptcheck';
 	elm.value = 'enabled';
 	mfObj.appendChild(elm);
-
+	
 	var tagObjects = document.getElementsByTagName("tr");
 	for(i=0;i < tagObjects.length;i++) {
 		if(i % 2 == 1 && tagObjects[i].className == "mfptr"){
 			tagObjects[i].style.backgroundColor = "#E8EEF9";
 		}
 	}
-	// if(mfObj){
+	if(mfObj){
 	// 	for(i=0;i<mfObj.length;i++){
 	// 		if(mfObj.elements[i].size){
 	// 			if(mfObj.elements[i].type == "text")
@@ -236,7 +236,7 @@
 	// 		if(mfObj.elements[i].cols)
 	// 			mfObj.elements[i].style.width = (mfObj.elements[i].cols * 18) + "px";
 	// 	}
-	// }
+	}
 	var valueList = new Array();
 	var selectedLinks = new Array();
 	var elcount = 0;

@@ -2,6 +2,19 @@
 
 $error_flag = 0;
 @sendmails = ('/lib/sendmail','/usr/bin/sendmail','/usr/sbin/sendmail','/usr/lib/sendmail','/usr/local/sbin/sendmail','/usr/local/lib/sendmail');
+$hit = `find \`perl -e 'print "@INC"'\` -name 'Jcode.pm' -print`;
+if($hit eq $null && !(-f 'Jcode.pm')){
+	$error = <<'	__error_body__';
+			<dt>Jcodeがたぶんインストールされていません</dt>
+			<dd>
+				日本語文字コード変換モジュール「Jcode」がインストールされていません。
+				<a href="http://search.cpan.org/" target="_blank">CPAN</a>から「Jcode」で検索するとJcodeが出てくると思うので、クリックして右側にあるDownloadからダウンロードしてください。
+				圧縮形式が.tar.gzというタイプの圧縮ファイルのため、<a href="http://www.vector.co.jp/soft/win95/util/se166893.html" target="_blank">Lhaca</a>などの解凍ソフトで解凍してね。
+				で、解凍するとゴチャゴチャファイルがあるんですが「Jcode.pm」と「Jcodeフォルダ」をsend.cgiと同じ階層にアップすればOKです。
+			</dd>
+	__error_body__
+	$error_message .= $error;
+}
 @stat = stat 'send.cgi';
 $permission = substr((sprintf "%03o", $stat[2]), -3);
 if($permission ne '755'){
@@ -25,7 +38,7 @@ if($sendmail ne $null){
 	$error = <<"	__error_body__";
 			<dt>多分sendmailのパスはこう！</dt>
 			<dd>
-				このサーバのsendmailのパスはたぶんだけど<input type="text" value="${sendmail}" style="width: 150px;" />こうっ！！<br />
+				このサーバのsendmailのパスはたぶんだけど<input type="text" value="${sendmail}" style="width: 150px;" />こうっ！<br />
 				サーバ推奨のsendmailと違う場合はサーバ推奨のパスを使って！
 			</dd>
 	__error_body__
@@ -102,7 +115,7 @@ $html = <<"__print_body__";
 		<div id="wrapper">
 			<div id="inbox">
 				<h1>Mailform check 1.0.0</h1>
-				<p>メールフォーム 6.1.0用のチェッカーです。各種モジュール等のチェックを行います。</p>
+				<p>メールフォーム CGI UTF-8版 6.1.0用のチェッカーです。各種モジュール等のチェックを行います。</p>
 				${error_message}
 			</div>
 		</div>
