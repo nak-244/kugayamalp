@@ -27,7 +27,7 @@ $conf{'sendmail'} = '/usr/sbin/sendmail';
 $conf{'mailto'} = 't09024656860@gmail.com';
 
 #07.送信完了時にリダイレクトするサンクスページ
-$conf{'thanks'} = 'https://ygood.jp/lp/2020kugayama/';
+$conf{'thanks'} = 'https://ygood.jp/lp/2020kugayama/thanks.html';
 
 #08.設置者に届くメールの件名
 $conf{'subject'} = '【久我山LP】無料資料請求がありました。';
