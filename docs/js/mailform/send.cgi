@@ -10,10 +10,10 @@ use Jcode;
 $conf{'debug'} = 0;
 
 #03.スパムブロック([URL]や[LINK]、<a>タグが含まれた送信をブロック) 1:ON / 0:OFF
-$conf{'spam_block'} = 1;
+$conf{'spam_block'} = 0;
 
 #03-01.送信文字列にURLが含まれる場合に送信をブロック 1:ON / 0:OFF
-$conf{'spam_url_block'} = 1;
+$conf{'spam_url_block'} = 0;
 
 #03-02.スパム判定時に表示されるメッセージ
 $conf{'spam_message'} = 'スパム行為の可能性があるため、送信できません。<br />送信内容にURLを含める事はできません。';
