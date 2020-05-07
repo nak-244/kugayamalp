@@ -1533,7 +1533,7 @@
 			<div id="footer_fixed">
 				<ul>
 					<li><a href="tel:08005551165" onclick="ga('send','event','click','tel-tap', 'head');"><span>電話問合せ</span></a></li>
-					<li><a href="問い合わせへリンク"><span>メール問合せ</span></a></li>
+					<li><a data-toggle="modal" data-target="#formModal" href="#!"><span>メール問合せ</span></a></li>
 				</ul>
 			</div>
 			<!--footer_fixed-->
@@ -1551,37 +1551,41 @@
 								<div class="form-group row align-items-center mb-0">
 									<label class="col-sm-3 text-left text-sm-right mb-0">お名前&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<p class="pc　mb-0">&nbsp;</p>
+										<span class="pc"><p class="mb-0">&nbsp;</p></span>
 										<input type="text" name="お名前(必須)" class="form-control" required />
 										<p class="mb-0">例：久我山太郎</p>
 									</div>
 								</div>
 								<div class="form-group row align-items-center mb-0">
+									<span class="sp"><p class="mb-0">&nbsp;</p></span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">メールアドレス&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<p class="pc　mb-0">&nbsp;</p>
+										<span class="pc"><p class="mb-0">&nbsp;</p></span>
 										<input type="email" name="email(必須)" class="form-control" required />
 										<p class="mb-0">例：info@ygood.jp</p>
 									</div>
 								</div>
 								<div class="form-group row align-items-center mb-0">
+									<span class="sp"><p class="mb-0">&nbsp;</p></span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">電話番号&nbsp;<span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">任意</span></label>
 									<div class="col-sm-9">
-										<p class="pc　mb-0">&nbsp;</p>
+										<span class="pc"><p class="mb-0">&nbsp;</p></span>
 										<input type="tel" name="電話番号" class="form-control" />
 										<p class="mb-0">例：048-658-8850</p>
 									</div>
 								</div>
 								<div class="form-group row align-items-center mb-0">
+									<span class="sp"><p class="mb-0">&nbsp;</p></span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">ご住所&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<p class="pc　mb-0">&nbsp;</p>
+										<span class="pc"><p class="mb-0">&nbsp;</p></span>
 										<input type="text" name="住所(必須)" class="form-control" required />
 										<p class="mb-0">例：東京都杉並区久我山4−14−20</p>
 									</div>
 								</div>
-								<p class="pc　mb-0">&nbsp;</p>
+								<span class="pc"><p class="mb-0">&nbsp;</p></span>
 								<div class="form-group row mb-0">
+									<span class="sp"><p class="mb-0">&nbsp;</p></span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">お問い合わせ内容&nbsp;<span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">任意</span></label>
 									<div class="col-sm-9">
 										<textarea rows="5" class="form-control" name="お問い合わせ内容" /></textarea>
