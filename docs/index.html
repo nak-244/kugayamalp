@@ -1573,51 +1573,178 @@
 								<div class="form-group row align-items-center mb-0">
 									<label class="col-sm-3 text-left text-sm-right mb-0">お名前&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<span class="pc"><p class="mb-0">&nbsp;</p></span>
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
 										<input type="text" name="お名前(必須)" class="form-control" required />
 										<p class="mb-0">例：久我山太郎</p>
 									</div>
 								</div>
 
 								<div class="form-group row align-items-center mb-0">
-									<span class="sp"><p class="mb-0">&nbsp;</p></span>
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+									</span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">メールアドレス&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<span class="pc"><p class="mb-0">&nbsp;</p></span>
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
 										<input type="email" name="email(必須)" class="form-control" required />
 										<p class="mb-0">例：info@ygood.jp</p>
 									</div>
 								</div>
 
 								<div class="form-group row align-items-center mb-0">
-									<span class="sp"><p class="mb-0">&nbsp;</p></span>
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+									</span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">電話番号&nbsp;<span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">任意</span></label>
 									<div class="col-sm-9">
-										<span class="pc"><p class="mb-0">&nbsp;</p></span>
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
 										<input type="tel" name="電話番号" class="form-control" />
 										<p class="mb-0">例：048-658-8850</p>
 									</div>
 								</div>
 
 								<div class="form-group row align-items-center mb-0">
-									<span class="sp"><p class="mb-0">&nbsp;</p></span>
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+									</span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">ご住所&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
 									<div class="col-sm-9">
-										<span class="pc"><p class="mb-0">&nbsp;</p></span>
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
 										<input type="text" name="住所(必須)" class="form-control" required />
 										<p class="mb-0">例：東京都杉並区久我山4−14−20</p>
 									</div>
 								</div>
 
-								<span class="pc"><p class="mb-0">&nbsp;</p></span>
+								<!-- 追加1 -->
+								<span class="pc">
+									<p class="mb-0">&nbsp;</p>
+									<p class="mb-0">&nbsp;</p>
+								</span>
+								<div class="form-group row align-items-center mb-0">
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+										<p class="mb-0">&nbsp;</p>
+									</span>
+									<label class="col-sm-3 text-left text-sm-right mb-0">ご入居予定対象者&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
+									<div class="col-sm-9">
+										<span class="form-inline">
+											<div class="custom-control custom-radio mr-2">
+												<input type="radio" id="ご本人" name="ご入居予定対象者(必須)" class="custom-control-input">
+												<label class="custom-control-label" for="ご本人">ご本人</label>
+											</div>
+											<div class="custom-control custom-radio mr-2">
+												<input type="radio" id="ご家族" name="ご入居予定対象者(必須)" class="custom-control-input">
+												<label class="custom-control-label" for="ご家族">ご家族</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="その他" name="ご入居予定対象者(必須)" class="custom-control-input">
+												<label class="custom-control-label" for="その他">その他</label>
+											</div>
+										</span>
+									</div>
+								</div>
+								<span class="pc">
+									<p class="mb-0">&nbsp;</p>
+								</span>
+
+								<!-- 追加2 -->
+								<div class="form-group row align-items-center mb-0">
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+										<p class="mb-0">&nbsp;</p>
+									</span>
+									<label class="col-sm-3 text-left text-sm-right mb-0">対象者ご年齢&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
+									<div class="col-sm-3">
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
+										<div class="input-group">
+											<input type="tel" class="form-control" name="対象者ご年齢(必須)" aria-describedby="basic-addon1">
+											<div class="input-group-append">
+												<button class="btn btn-default" type="button">歳</button>
+											</div>
+										</div>
+										<p class="mb-0">&nbsp;</p>
+									</div>
+								</div>
+
+								<!-- 追加3 -->
+								<div class="form-group row align-items-center mb-0">
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+									</span>
+									<label class="col-sm-3 text-left text-sm-right mb-0">要介護度&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
+									<div class="col-sm-3">
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
+										<div class="input-group">
+											<select class="custom-select">
+											  <option selected>選択してください</option>
+											  <option value="自立" name="要介護度(必須)">自立</option>
+											  <option value="要支援1" name="要介護度(必須)">要支援1</option>
+											  <option value="要支援2" name="要介護度(必須)">要支援2</option>
+												<option value="要介護1" name="要介護度(必須)">要介護1</option>
+												<option value="要介護2" name="要介護度(必須)">要介護2</option>
+												<option value="要介護3" name="要介護度(必須)">要介護3</option>
+												<option value="要介護4" name="要介護度(必須)">要介護4</option>
+												<option value="要介護5" name="要介護度(必須)">要介護5</option>
+												<option value="不明" name="要介護度(必須)">不明</option>
+											</select>
+										</div>
+										<p class="mb-0">&nbsp;</p>
+									</div>
+								</div>
+
+								<!-- 追加4 -->
+								<div class="form-group row align-items-center mb-0">
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+									</span>
+									<label class="col-sm-3 text-left text-sm-right mb-0">愛犬の有無&nbsp;<span class="badge badge-secondary badge-sm badge-pill text-uppercase px-2 py-1 mr-1">必須</span></label>
+									<div class="col-sm-9">
+										<span class="pc">
+											<p class="mb-0">&nbsp;</p>
+										</span>
+										<span class="form-inline">
+											<div class="custom-control custom-radio mr-2">
+												<input type="radio" id="ご本人" name="愛犬の有無(必須)" class="custom-control-input">
+												<label class="custom-control-label" for="有">有</label>
+											</div>
+											<div class="custom-control custom-radio">
+												<input type="radio" id="ご家族" name="愛犬の有無(必須)" class="custom-control-input">
+												<label class="custom-control-label" for="無">無</label>
+											</div>
+										</span>
+										<input type="text" name="犬種" class="form-control" placeholder="有の方は犬種を教えて下さい"/>
+									</div>
+								</div>
+								<span class="pc">
+									<p class="mb-0">&nbsp;</p>
+								</span>
+
+								<span class="pc">
+									<p class="mb-0">&nbsp;</p>
+								</span>
 								<div class="form-group row mb-0">
-									<span class="sp"><p class="mb-0">&nbsp;</p></span>
+									<span class="sp">
+										<p class="mb-0">&nbsp;</p>
+										<p class="mb-0">&nbsp;</p>
+									</span>
 									<label class="col-sm-3 text-left text-sm-right mb-0">お問い合わせ内容&nbsp;<span class="badge badge-dark badge-sm badge-pill text-uppercase px-2 py-1 mr-1">任意</span></label>
 									<div class="col-sm-9">
 										<textarea rows="5" class="form-control" name="お問い合わせ内容" /></textarea>
 									</div>
 								</div>
-								
+
 							</div>
 							<div class="modal-footer">
 								<div class="mx-auto">
