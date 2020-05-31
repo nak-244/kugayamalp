@@ -27,30 +27,48 @@
 	<link rel="stylesheet" href="vendor/rs-plugin/css/navigation.css">
 	<link rel="stylesheet" href="css/skins/14.css">
 	<link rel="stylesheet" href="css/custom.css">
+	<style>
+		.form-control:not(.form-control-sm):not(.form-control-lg) {
+			font-size: 16px;
+		}
+	</style>
 	<script src="vendor/modernizr/modernizr.min.js"></script>
 	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KVKWM6B');</script>
+	<script>
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-KVKWM6B');
+	</script>
 	<!-- End Google Tag Manager -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152806005-3"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
 
-	  gtag('config', 'UA-152806005-3');
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-152806005-3');
 	</script>
 </head>
 
 <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
 
 	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVKWM6B"
-	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVKWM6B" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
 	<div class="loading-overlay">
@@ -1744,7 +1762,7 @@
 												<label class="custom-control-label" for="無">無</label>
 											</div>
 										</span>
-										<input type="text" name="犬種" class="form-control" placeholder="有の方は犬種を教えて下さい"/>
+										<input type="text" name="犬種" class="form-control" placeholder="有の方は犬種を教えて下さい" />
 									</div>
 								</div>
 								<span class="pc">
@@ -1803,16 +1821,16 @@
 		<script src="js/theme.init.js"></script>
 
 		<script type="text/javascript">
-		  (function () {
-		    var tagjs = document.createElement("script");
-		    var s = document.getElementsByTagName("script")[0];
-		    tagjs.async = true;
-		    tagjs.src = "//s.yjtag.jp/tag.js#site=tQCB6WN";
-		    s.parentNode.insertBefore(tagjs, s);
-		  }());
+			(function() {
+				var tagjs = document.createElement("script");
+				var s = document.getElementsByTagName("script")[0];
+				tagjs.async = true;
+				tagjs.src = "//s.yjtag.jp/tag.js#site=tQCB6WN";
+				s.parentNode.insertBefore(tagjs, s);
+			}());
 		</script>
 		<noscript>
-		  <iframe src="//b.yjtag.jp/iframe?c=tQCB6WN" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+			<iframe src="//b.yjtag.jp/iframe?c=tQCB6WN" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 		</noscript>
 
 </body>
